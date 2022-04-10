@@ -1,0 +1,81 @@
+{
+  "name": "lunarcal",
+  "version": "1.0.0",
+  "description": "A calendar command used to print the Chinese Lunar calendar and national holidays in terminal.",
+  "license": "MIT",
+  "author": {
+    "name": "Nathan Ma",
+    "email": "nathan.mading@gmail.com"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "bin": {
+    "lunarcal": "lib/cli.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src -d lib",
+    "clean": "rm -rf lib",
+    "lint": "prettier --check src/**/*.js",
+    "lint:fix": "prettier --write src/**/*.js",
+    "package:macos": "pkg . --output ./bin/lunarcal --targets latest-macos-x64",
+    "package:linux": "pkg . --output ./bin/lunarcal --targets latest-linux-x64",
+    "package:window": "pkg . --output ./bin/lunarcal --targets latest-win-x64",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "bin",
+    "util",
+    "calendar",
+    "chinese",
+    "lunar",
+    "holiday",
+    "cmd",
+    "console"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathan-mading/lunarcal.git"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "dayjs": "^1.10.7",
+    "lunar-javascript": "^1.2.30",
+    "meow": "9.0.0",
+    "tty-table": "^4.1.5",
+    "update-notifier": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-flow": "7.16.7",
+    "jest": "^27.5.1",
+    "pkg": "^5.6.0",
+    "prettier": "^2.6.2"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "12"
+          }
+        }
+      ],
+      "@babel/preset-flow"
+    ]
+  }
+}
