@@ -1,6 +1,6 @@
 {
   "name": "lunarcal",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A calendar command used to print the Chinese Lunar calendar and national holidays in terminal.",
   "license": "MIT",
   "author": {

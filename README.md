@@ -4,8 +4,6 @@ A calendar command used to print the Chinese Lunar calendar and national holiday
 
 [简体中文](docs/README_zh.md)
 
-<img src=docs/demo.png width=300 height=300 alt=Demo />
-
 ## Install
 
 **npm**
@@ -47,3 +45,28 @@ $ lunarcal --help
   #3 Print specified month view of June 2022, with border and week starts on Saturday
     $ lunarcal 6 2022 -b --week-start=5
 ```
+
+## Layout Preview
+*Month View:*
+
+<img src=assets/images/month-view.png width=240 height=220 alt="Demo Month View" />
+
+*Day View:*
+
+<img src=assets/images/day-view.png width=180 height=162 alt="Demo Day View" />
+
+
+## Donations $
+You like lunarcal and you would like to show your support and help developing new features in the next releases? 
+
+Scan QR-code to **Buy me a coffee** will be much obliged!
+
+_Wechat_
+
+<img src=assets/images/donate-wechat.jpeg width=200 height=200 alt="Donate Wechat" />
+
+_Alipay_
+
+<img src=assets/images/donate-alipay.jpeg width=200 height=200 alt="Donate Alipay" />
+
+
